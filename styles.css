@@ -1,5 +1,6 @@
 body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ECEFF1;
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -8,7 +9,7 @@ body {
 }
 
 .header {
-    background-color: #000000;
+    background-color: #263238;
     display: flex;
     font-size: 24px;
     color: #F9FAF8;
@@ -23,15 +24,40 @@ body {
 
 .footer {
     text-align: center;
-    background-color: #1F2937;
+    background-color: #37474F;
     color: #F9FAF8;
-    padding: 30px 10% 30px 10%;
+    padding: 10px 10% 10px 10%;
     margin-top: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 #calculatorArea {
     height: 400px;
     width: 300px;
     border-style: solid;
-    border-radius: 5rem;
+    border-width: 1.5px;
+    border-radius: 1rem;
+    display: block;
+    flex-direction: column;
+}
+
+#calculatorArea > div {
+    margin: 10px
+}
+
+#calcDisplay {
+    border-style: solid;
+    border-width: 1px;
+    height: 40px;
+}
+
+#calcButtons {
+    border-style: solid;
+    border-width: 1px;
 }

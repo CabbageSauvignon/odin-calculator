@@ -16,9 +16,15 @@ const buttonArray = [
     {"buttonID": "equal", "symbol": "="},
     {"buttonID": "decimal", "symbol": "."}
 ]
-
+createCalcButtons();
 
 function createCalcButtons () {
-    buttonArea = document.getElementById(calcButtons);
-
+    const buttonArea = document.getElementById("calcButtons");
+    for (button of buttonArray) {
+        newButton = document.createElement("div");
+        newButton.setAttribute("Id", `${button.buttonID}`)
+        newButton.textContent = button.symbol;
+        console.log(newButton);
+        buttonArea.appendChild(newButton);
+    }
 }
